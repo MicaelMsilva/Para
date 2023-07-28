@@ -1,0 +1,19 @@
+programa
+{
+	funcao inicio()
+	{
+		real A = 80000
+		real B = 200000
+		real crescimento_A = 0.03 
+		real crescimento_B = 0.015 
+		inteiro anos = 0
+		
+		para (; A < B; anos = anos + 1)
+		{
+			A = A + A * crescimento_A 
+			B = B + B * crescimento_B 
+		}
+
+		escreva("Em ", anos, " anos, A ultrapassará B.")
+	}
+}
